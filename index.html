@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ยินดีด้วยนะจ้าว 🌹</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- ซองจดหมาย -->
+      <div class="intro" id="intro">
+        <div class="letter" onclick="openLetter()">💌</div>
+        <div class="open-text">แตะเพื่อเปิดจดหมาย</div>
+      </div>
+      <!-- เว็บหลัก -->
+      <div class="page" id="page">
+        <!-- Hero — ปิด div ถูกที่ -->
+        <div class="hero reveal content-wrapper">
+      <div class="hearts-top  ">🌹🌸🌹</div>
+      <div class="congrat-label">Congratulations</div>
+      <div class="divider">  <!-- ← เอา reveal ออก -->
+        <div class="divider-line"></div>
+        <div class="divider-icon">🌸</div>
+        <div class="divider-line"></div>
+      </div>
+      <div class="main-title"><span>❤️</span>ยินดีด้วยนะ<span>❤️</span></div>
+      <div class="subtitle-name" id="name-display">จ้าว</div>
+      <div class="univ-badge">
+        <i class="ti ti-school" aria-hidden="true"></i>
+        <span id="univ-display">จุฬาลงกรณ์มหาวิทยาลัย</span>
+      </div>
+    </div>
+        <div class="divider reveal content-wrapper">
+          <div class="divider-line"></div>
+          <div class="divider-icon">🌸</div>
+          <div class="divider-line"></div>
+        </div>
+        <!-- ข้อความรัก -->
+        <div class="message-card reveal content-wrapper">
+          <p class="message-text" id="msg-text">
+            " หนูเก่งมากเลยนะ ภูมิใจในตัวหนูมากๆ เลย<br>
+            ทุกความพยายามที่ผ่านมามันคุ้มค่าแล้ว<br>
+            รักหนูที่สุดเลย 🌹 "
+          </p>
+        </div>
+
+        <div class="divider reveal content-wrapper">
+          <div class="divider-line"></div>
+          <div class="divider-icon">🌸</div>
+          <div class="divider-line"></div>
+        </div>
+        <!-- รูปภาพ 3 ช่อง -->
+        <div class="photo-section reveal content-wrapper">
+          <div class="photo-grid" id="photo-grid"></div>
+        </div>
+
+        <!-- รูปคู่เลื่อน -->
+        <div class="photo-slider">
+          <div class="photo-track">
+            <img src="รูปคู่1.jpg" alt="รูปคู่ 1">
+            <img src="รูปคู่2.jpg" alt="รูปคู่ 2">
+            <img src="รูปคู่3.jpg" alt="รูปคู่ 3">
+            <!-- ซ้ำเพื่อให้ loop ต่อเนื่อง -->
+            <img src="รูปคู่1.jpg" alt="รูปคู่ 1">
+            <img src="รูปคู่2.jpg" alt="รูปคู่ 2">
+            <img src="รูปคู่3.jpg" alt="รูปคู่ 3">
+            <img src="รูปคู่1.jpg" alt="รูปคู่ 1">
+            <img src="รูปคู่2.jpg" alt="รูปคู่ 2">
+            <img src="รูปคู่3.jpg" alt="รูปคู่ 3">
+          </div>
+        </div>
+        <div class="photo-slider-left">
+          <div class="photo-track">
+            <img src="รูปคู่4.jpg" alt="รูปคู่ 4">
+            <img src="รูปคู่5.jpg" alt="รูปคู่ 5">
+            <img src="รูปแมวอ้วน1.jpg" alt="รูปแมวอ้วน1">
+            <!-- ซ้ำเพื่อให้ loop ต่อเนื่อง -->
+            <img src="รูปคู่4.jpg" alt="รูปคู่ 4">
+            <img src="รูปคู่5.jpg" alt="รูปคู่ 5">
+            <img src="รูปแมวอ้วน1.jpg" alt="รูปแมวอ้วน1">
+          </div>
+        </div>
+
+
+        <div class="divider reveal content-wrapper">
+          <div class="divider-line"></div>
+          <div class="divider-icon">🌸</div>
+          <div class="divider-line"></div>
+        </div>
+
+        <!-- ช่องข้อความเพิ่มเติม — ก่อนปุ่มฉลอง -->
+     <div class="extra-message-card reveal content-wrapper ">
+      <div class="extra-message-title" onclick="toggleMessage(this)" style="cursor:pointer">
+        💌 บีมอยากบอกว่า... <span class="arrow">▼</span>
+      </div>
+      <p class="extra-message-text " style="display:none">
+        จ้าวเป็นคนที่พิเศษที่สุดในชีวิตของพี่เลยนะ<br>
+ตั้งแต่วันแรกที่รู้จักกัน พี่ก็รู้เลยว่าจ้าวไม่ธรรมดา<br>
+มีอะไรบางอย่างในตัวจ้าวที่ทำให้พี่อยากอยู่ใกล้ๆ ตลอดเวลา ❤️<br><br>
+
+ยิ่งรู้จักกันนานขึ้น พี่ก็ยิ่งรู้ว่าตัวเองโชคดีแค่ไหน<br>
+ที่ได้มีจ้าวอยู่ในชีวิต<br>
+บางทีพี่ก็แอบมองจ้าวแล้วคิดว่า<br>
+"คนนี้แหละที่พี่อยากอยู่ด้วยไปนานๆ" 🥺<br><br>
+
+ตลอดเวลาที่ผ่านมา พี่เห็นจ้าวพยายามมาตลอด<br>
+เห็นทุกคืนที่จ้าวนั่งอ่านหนังสือ<br>
+เห็นทุกวันที่จ้าวสู้แม้จะเหนื่อย<br>
+ไม่ว่าจะยากแค่ไหน จ้าวก็ไม่เคยยอมแพ้<br>
+และวันนี้... ทุกหยาดเหงื่อที่จ้าวทุ่มเท มันคุ้มค่ามากเลย 🌹<br><br>
+
+พี่ภูมิใจในตัวจ้าวมากๆ เลยนะ<br>
+ภูมิใจที่ได้อยู่ข้างๆ คนเก่งอย่างจ้าว<br>
+ภูมิใจที่ได้เรียกจ้าวว่า "แฟน" 💕<br>
+ภูมิใจที่ได้เป็นคนที่จ้าวเลือก<br><br>
+
+พี่รู้ว่าหนทางข้างหน้ายังยาวอีกมาก<br>
+แต่ไม่ว่าจะเป็นอะไร พี่ก็จะอยู่ตรงนี้เสมอ<br>
+คอยเชียร์จ้าว คอยอยู่เคียงข้างจ้าว<br>
+และคอยรักจ้าวในทุกๆ วัน 🌸<br><br>
+
+ขอให้จ้าวมีความสุขมากๆ นะ<br>
+มีความสุขกับทุกก้าวที่เดินต่อไป<br>
+มีความสุขกับความฝันที่กำลังจะเป็นจริง<br>
+และมีความสุขที่ได้รู้ว่า... พี่รักจ้าวมากที่สุดในโลกเลย 🌹❤️
+      </p>
+    </div>
+        <div class="divider reveal content-wrapper">
+          <div class="divider-line"></div>
+          <div class="divider-icon">🌸</div>
+          <div class="divider-line"></div>
+        </div>
+
+        <!-- จานเพลง -->
+        <div class="music-player">
+          <div class="music-disc" id="disc" onclick="playMusic()">
+            <div class="ring ring1"></div>
+            <div class="ring ring2"></div>
+            <div class="ring ring3"></div>
+            <div class="ring ring4"></div>
+            <i class="ti ti-music" style="font-size:clamp(40px,8vh,80px); color:white;" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="from-tag reveal content-wrapper">จาก <strong>บีม</strong> ด้วยความรัก 💕</div>
+        <button class="fireworks-btn reveal content-wrapper" onclick="launchFireworks()">🎉 ฉลองด้วยกัน!</button>
+
+      </div>
+
+      <canvas id="fw-canvas" class="canvas-overlay"></canvas>
+      <audio id="player">
+        <source src="เพลงรัก.mp3" type="audio/mpeg">
+      </audio>
+
+      <script src="script.js"></script>
+      <!-- ตัวนับวันคบกัน -->
+<div class="love-counter reveal content-wrapper">
+  <div class="love-counter-title">💕 เราคบกันมาแล้ว</div>
+  <div class="love-counter-days" id="love-days"> Day</div>
+  
+  <div class="love-counter-detail" id="love-detail"></div>
+</div>
+
+</body>
+</html>
